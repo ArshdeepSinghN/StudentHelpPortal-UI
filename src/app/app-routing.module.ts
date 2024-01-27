@@ -40,9 +40,9 @@ const routes: Routes = [
   // {
   //   path: 'bot', component: AiHelpComponent
   // }
-  ,{
-    path:'', component: HomeComponent
-  }
+  // ,{
+  //   path:'', component: HomeComponent
+  // }
 
 ];
 
