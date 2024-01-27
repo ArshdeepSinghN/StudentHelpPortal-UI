@@ -7,7 +7,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
 // import { AiHelpComponent } from './ai-help/ai-help.component';
 // import { PeerTutorComponent } from './peer-tutor/peer-tutor.component';
 // import { PeerMentorsComponent } from './peer-mentors/peer-mentors.component';
-import { HomeComponent } from './home/home.component';
+// import { HomeComponent } from './home/home.component';
 import { RegisterUserComponent } from './authentication/register-user/register-user.component';
 import { LoginComponent } from './authentication/login/login.component';
 
