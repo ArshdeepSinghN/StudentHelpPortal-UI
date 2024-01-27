@@ -1,0 +1,163 @@
+/* SCSS variables ------------------------*/
+
+// $color-black: #000;
+// $color-black-1: #1d1d1d;
+// $color-grey: #464d5f;
+// $color-grey-light: #a8acb9;
+// $color-grey-light-1: #f7f7f7;
+// $color-grey-light-2: #eee;
+// $color-grey-light-4: #ccc;
+// $color-grey-light-5: #eaf0f7;
+// $color-grey-light-6: #f6f8fa;
+// $color-grey-light-7: rgba(255, 255, 255, 0.58);
+// $color-grey-dark: #777;
+// $color-grey-dark-4: #6b6767;
+// $color-white: #fff;
+// $color-white-fltr-90: rgba(255, 255, 255, 0.90);
+// $color-primary: #23a2e2;
+// $color-form: #ced4da;
+// $color-green: #1F955C;
+// $color-dark-green: #2FB665;
+// $color-theme-main: #33CCFF;
+// $color-theme-dark-blue: #1f2637;
+// $color-theme-dark-blue-1: #080f22;
+// $color-theme-dark-blue-2: #151e33;
+// $color-theme-dark-blue-4: #2e3353;
+// $color-theme-dark-blue-5: #131a29;
+// $color-danger: #dc3545;
+// $form-lable-dark: #989898;
+// $form-lable-light: #999B9F;
+// $input-background: #1F2330;
+// $input-border: #3A4665;
+// $grey-black: #1C1F28;
+// $color-danger-dark: #DA3849;
+// $color-success: #72e7a1;
+// $color-primary-dark: #17B2E5;
+// $modal-dark-mode: rgba(21, 28, 46, 0.9);
+// $modal-light-mode: rgba(242, 246, 250, 0.9);
+// $modal-background: #080E21;
+
+
+// /*New Colors added*/
+// $menu-disabled-state: #22364C;
+// $btn-primary: #17B2E5;
+// $color-primary-light: #17B2E5;
+// $color-primary-medium: #0491BF;
+// $color-disabled: #738EAB;
+// $color-heading: #F0FAFD;
+// $color-danger-light: #F67C89;
+// $text-dark-mode: #BDC5CB;
+// $color-pale-blue: #D7E0E9;
+// $color-xlight-grey: #F2F6FA;
+// $color-info: #da863899;
+// $color-dark-grey: #5A6278;
+// $color-light-grey: #D7E0E9;
+// $color-primary-xxlight: #F0FAFD;
+// $color-primary-xlight: #D7F3FD;
+// $color-xpale-blue: #E6EBF0;
+// $container-bg :#181d29;
+// $gradient-dark-50 :rgba(34, 54, 76, 0.94);
+// $gradient-dark-100 :rgba(34, 54, 76, 0);
+// $gradient-light-100 :rgba(215, 224, 233, 0);
+// $color-orange: #DA8638;
+// $color-yellow: rgb(255, 255, 0);
+// $blue-grey: #91AECE;
+// $success-light: #AEF2C9;
+// $info-light: #F8D9BC;
+// $error-light: #F5C4C9;
+// $color-dark-green-x: #1F6537;
+// $color-blue-grey: #243E59;
+// $shadow-1: 0px 5px 18px rgba(0, 0, 0, 0.7);
+// $shadow-2: 0px 14px 20px rgba(187, 199, 209, 0.4);
+// $shadow-3: -1px 0px 3px 8px rgb(8, 14, 33, 0.95);
+// $shadow-4: -1px 0px 3px 8px rgb(255, 255, 255, 0.95);
+// $danger-light: #FCEBED;
+// $danger-dark-2: #90374A;
+// $color-grey-light-8: #BDC6CE;
+// $primary-300: #A4E7FD;
+// $primary-600: #4CB0D1;
+// $col-placeholder: #90A1AD;
+// $col-hover-darkBlue: #1C344E;
+// $col-warning: #F8AA62;
+// $dark-mode-shadow: rgba(8, 14, 33, 0.7);
+// $light-mode-shadow: rgba(26, 30, 33, 0.11);
+// $primary-dark-shadow: rgba(31, 80, 124, 0.66);
+// $primary-shadow: rgba(114, 169, 218, 0.76);
+// $info-bg-dark: #112236;
+
+// // Redesigning | New colors
+// $brand-color:#332970;
+// $theme-color:#00CFFF;
+// $input-border-color: rgba(51, 204, 255, 0.65);
+
+
+
+
+
+// /* SCSS variables ------------------------*/
+
+
+// /* font sizes variables-------------------*/
+// $font-size-x-xs: 10px;
+// $font-size-x-sm: 12px;
+// $font-size-sm: 14px;
+// $font-size-body: 16px;
+// $font-size-md: 18px;
+// $font-size-l: 20px;
+// $font-size-xl: 24px;
+// $font-size-xxl: 28px;
+// /* font sizes variables-------------------*/
+
+// /* Dynamic font sizes variables-------------------*/
+// $d-font-size-x-sm: calc(0.20vw + 10px);
+// $d-font-size-sm: calc(0.30vw + 10px);
+// $d-font-size-l: calc(0.30vw + 16px);
+// /* Dynamic font sizes variables-------------------*/
+
+
+// /* font-families variables-------------------*/
+// $font-families: (
+//   primary-extra-light: 'Nunito-Sans-ExtraLight',
+//   primary-light: 'Nunito-Sans-Light',
+//   primary: 'NunitoSans-Regular', // regular
+//   primary-itallic: 'Nunito-Sans-Italic',
+//   primary-semi-bold: 'Nunito-Sans-SemiBold',
+//   primary-bold: 'Nunito-Sans-Bold',
+
+//   // Brand Fonts
+//   brand-regular: 'Brand-Regular',
+//   brand-itallic: 'Brand-Itallic',
+//   brand-semibold: 'Brand-SemiBold',
+//   brand-semibold-itallic: 'Brand-SemiBold-Italic',
+//   brand-bold: 'Brand-Bold',
+//   brand-bold-itallic: 'Brand-BoldItalic',
+// );
+// /* font-families variables-------------------*/
+
+// /* font-weights variables-------------------*/
+// $typography-weights: (
+//   thin: 100,
+//   light: 300,
+//   regular: 400,
+//   medium: 500,
+//   semi-bold: 600,
+//   bold: 700
+// );
+/* font-weights variables-------------------*/
+
+/* breakpoints -------------------------*/
+
+$breakpoints: (
+  xxSmall: 360px,
+  xSmall: 576px,
+  Small: 768px,
+  MediumSmall: 992px,
+  Medium: 1200px,
+  xMediumLarge: 1366px,
+  MediumLarge: 1440px,
+  xsLarge: 1600px,
+  Large: 1920px,
+  xLarge: 2560px,
+);
+
+/* breakpoints -------------------------*/

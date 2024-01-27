@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./scss/abstracts/mixins";
+@import "./scss/abstracts/functions";
+@import "./scss/abstracts/variables";
+body {
+  font-family: 'Lato', sans-serif; /* Apply Lato font to the entire project */
+}
+h1 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #a08f86;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to headings */
+}
+.btn-primary {
+  background-color: #eb5d1f;
+  border: 0; /* Button color */
+}
+
+.main-container {
+  // background: #c0ded5f0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.wrapper{
+  padding: 5px;
+}
+
+.button{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.page-content{
+  // background-color: #e8eeed;
+  background-color: #96d1bff0;
+  height: calc(100vh - 330px);
+  margin-top: 10px;
+
+  @include responsive-max(xsLarge) {
+    height: calc(100vh - 130px);
+  }
+
+  @include responsive-max(xlrgTablet) {
+    height: calc(100vh - 270px);
+  }
+}
+
+.label-font{
+  font-weight: bold;
+}
+
+.chat-main{
+  background: #eee;
+
+  height: calc(100vh - 330px);
+  margin-top: 10px;
+
+  @include responsive-max(xsLarge) {
+    height: calc(100vh - 90px);
+  }
+
+  @include responsive-max(xlrgTablet) {
+    height: calc(100vh - 270px);
+  }
+}
+
+.chat-right-panel-height{
+
+  height: calc(100vh - 330px);
+
+  @include responsive-max(xsLarge) {
+    height: calc(100vh - 140px);
+  }
+
+  @include responsive-max(xlrgTablet) {
+    height: calc(100vh - 280px);
+  }
+}
+.chat-left-panel-list-height{
+
+  height: calc(100vh - 330px);
+
+  @include responsive-max(xsLarge) {
+    height: calc(100vh - 300px);
+  }
+
+  @include responsive-max(xlrgTablet) {
+    height: calc(100vh - 440px);
+  }
+}
+
+
+

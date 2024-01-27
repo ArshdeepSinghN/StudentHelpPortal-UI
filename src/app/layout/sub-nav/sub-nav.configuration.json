@@ -1,0 +1,18 @@
+[
+  {
+    "RouteUrl": ["/user/register", "/user/view"],
+    "Name": "Users",
+    "Data": [
+      {
+        "Index": 0,
+        "Key": "View",
+        "Route": "/user/view"
+      },
+      {
+        "Index": 1,
+        "Key": "Register",
+        "Route": "/user/register"
+      }
+    ]
+  }
+]

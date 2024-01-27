@@ -1,0 +1,118 @@
+
+// MEDIA QUERY MANAGER
+
+/* Break points - Small to large screens */
+@mixin responsive-max($point, $breakpoints: $breakpoints) {
+  @if $point == xxMobile {
+    @media (max-device-width: map-get($breakpoints, xxSmall)) {
+      @content;
+    }
+  }
+  @if $point == xMobile {
+    @media (max-device-width: map-get($breakpoints, xSmall)) {
+      @content;
+    }
+  } @else if $point == Mobile {
+    @media (max-device-width: map-get($breakpoints, Small)) {
+      @content;
+    }
+  } @else if $point == smlTablet {
+    @media (max-device-width: map-get($breakpoints, MediumSmall)) {
+      @content;
+    }
+  } @else if $point == Tablet {
+    @media (max-device-width: map-get($breakpoints, Medium)) {
+      @content;
+    }
+  }  @else if $point == xlrgTablet {
+    @media (max-device-width: map-get($breakpoints, xMediumLarge)) {
+      @content
+    }
+  }  @else if $point == lrgTablet {
+    @media (max-device-width: map-get($breakpoints, MediumLarge)) {
+      @content
+    }
+  } @else if $point == xsLarge {
+    @media (max-device-width: map-get($breakpoints, xsLarge)) {
+      @content
+    }
+  } @else if $point == Desktop {
+    @media (max-device-width: map-get($breakpoints, Large)) {
+      @content
+    }
+  } @else if $point == xDesktop {
+    @media (max-device-width: map-get($breakpoints, xLarge)) {
+      @content
+    }
+  }
+}
+@mixin responsive-min($point, $breakpoints: $breakpoints) {
+  @if $point == xDesktop {
+    @media (min-device-width: map-get($breakpoints, xLarge)) {
+      @content
+    }
+  }
+  @if $point == Desktop {
+    @media (min-device-width: map-get($breakpoints, Large)) {
+      @content
+    }
+  }
+  @if $point == lrgTablet {
+    @media (min-device-width: map-get($breakpoints, MediumLarge)) {
+      @content
+    }
+  }
+  @if $point == Tablet {
+    @media (min-device-width: map-get($breakpoints, Medium)) {
+      @content
+    }
+  }
+  @if $point == smlTablet {
+    @media (min-device-width: map-get($breakpoints, MediumSmall)) {
+      @content
+    }
+  }
+}
+
+//Font Property --> Font Size, Color, Font-weight, Line-height
+@mixin font-style($size: false, $color: false, $weight: false, $lh: false) {
+  font-family: map_get($font-families, primary);
+  @if $size {
+    font-size: $size;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+//mixin for Padding & Margin
+//$spaceamounts values are given on the basis of Multiple of no. 4 & 5
+
+$spaceamounts: (4, 5, 8, 10, 12, 15, 16, 20, 24, 25, 30);
+$sides: (top, bottom, left, right);
+
+@mixin mr-($side, $value) {
+  margin-#{$side}: $value;
+}
+
+@mixin pd-($side, $value) {
+  padding-#{$side}: $value;
+}
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .mr-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    .pd-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+

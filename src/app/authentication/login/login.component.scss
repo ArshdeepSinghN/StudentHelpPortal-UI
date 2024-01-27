@@ -1,0 +1,19 @@
+em{
+  color: #e71515;
+  font-weight: bold;
+}
+.ng-invalid.ng-touched{
+  border-color: red;
+}
+.card{
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #cabcbc;
+}
+
+.card-body{
+  padding-left: 50px;
+}
+
