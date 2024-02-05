@@ -1,0 +1,38 @@
+<div class="container mt-5 mb-5">
+  <!-- chatbot-header.component.html -->
+<header class="chatbot-header">
+  <div class="container">
+    <div class="row text-center ">
+      <div class="col-md-12">
+        <h1>Chatbot Assistance</h1>
+        <p>Get instant answers to your questions </p>
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+  <div class="chatbot-container">
+    <div class="chatbot-chat">
+      <div *ngFor="let message of chatMessages" class="chat-message mb-3">
+        <div [ngClass]="{'user-message': message.isUser, 'bot-message': !message.isUser, 'loading-message': message.isLoading}">
+          <div *ngIf="!message.isLoading">
+            {{ message.text }}
+          </div>
+          <div *ngIf="message.isLoading" class="loader-container">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="input-container m-0">
+    <div class="input-group">
+      <input [(ngModel)]="userMessage" (keydown.enter)="sendMessage()" class="form-control input-text-lg" placeholder="Type your message" />
+      <div class="input-group-append" >
+        <button (click)="sendMessage()" class="btn btn-primary send-button">Send</button>
+      </div>
+    </div>
+  </div>
+</div>

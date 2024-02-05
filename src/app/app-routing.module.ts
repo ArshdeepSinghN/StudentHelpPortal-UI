@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './shared/guards/auth.guard';
 // import { UserRegisterComponent } from './user/user-register/user-register.component';
 // import { UserComponent } from './user/user.component';
-// import { AiHelpComponent } from './ai-help/ai-help.component';
+import { AiHelpComponent } from './ai-help/ai-help.component';
 // import { PeerTutorComponent } from './peer-tutor/peer-tutor.component';
 // import { PeerMentorsComponent } from './peer-mentors/peer-mentors.component';
 import { HomeComponent } from './home/home.component';
@@ -27,7 +27,7 @@ const routes: Routes = [
   {
     path: 'authentication', loadChildren: () => import('./authentication/authentication.module').then(mod => mod.AuthenticationModule)
   }
-  //,
+  ,
   // {
   //   path:'', component: ChatComponent, canActivate: [AuthGuard]
   // }
@@ -37,9 +37,9 @@ const routes: Routes = [
   // {
   //   path: 'mentor', component: PeerMentorsComponent
   // },
-  // {
-  //   path: 'bot', component: AiHelpComponent
-  // }
+  {
+    path: 'bot', component: AiHelpComponent
+  }
   ,{
     path:'', component: HomeComponent
   }

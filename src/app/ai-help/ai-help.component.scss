@@ -1,0 +1,83 @@
+/* chatbot.component.css */
+.chatbot-container {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 70vh; /* Set a maximum height to enable scrolling */
+  // height: 100%; /* Fill the available vertical space */
+  overflow-y: auto; /* Enable vertical scrolling when needed */
+}
+
+
+/* chatbot.component.css */
+.chat-message {
+  padding: 10px;
+  display: flex;
+  width: 100%; 
+   justify-content: flex-end; /* Align messages to the right by default */
+}
+
+.user-message {
+  background-color: #eb5d1f;
+  padding: 15px;
+  color: white;
+  border-radius: 15px 15px 0 15px;
+  margin-bottom: 5px;
+  max-width: 80%;
+  align-self: flex-end; /* Align user messages to the right */
+  margin-left: auto; /* Add right margin to user messages */
+}
+
+.bot-message {
+  background-color: #fff;
+  padding: 15px;
+  color: #333;
+  border-radius: 15px 15px 15px 0px;
+  margin-bottom: 5px;
+  max-width: 80%;
+  align-self: flex-start; /* Align bot messages to the left */
+  margin-right: auto; /* Add left margin to bot messages */
+}
+
+
+
+.loader-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 80%;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #eb5d1f;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite; /* Apply the 'spin' animation */
+}
+
+
+.input-container {
+  padding-top: 15px;
+}
+
+.input-text-lg {
+  padding: 15px; /* Make the input field larger */
+  border-radius: 10px 0 0 10px;
+}
+
+.send-button {
+  border-radius: 0 10px 10px 0;
+  padding: 15px;
+  background-color: #eb5d1f;
+  border: 0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -23,7 +23,7 @@ import {AutoCompleteModule} from 'primeng/autocomplete';
 
 // import { ChatComponent } from './chat/chat.component';
 import { InterceptorService } from './service/interceptor.service';
-// import { AiHelpComponent } from './ai-help/ai-help.component';
+import { AiHelpComponent } from './ai-help/ai-help.component';
 // import { PeerTutorComponent } from './peer-tutor/peer-tutor.component';
 // import { PeerMentorsComponent } from './peer-mentors/peer-mentors.component';
 import { HomeComponent } from './home/home.component';
@@ -40,7 +40,7 @@ export function tokenGetter() {
     // UserComponent,
     // SubNavComponent,
     // ChatComponent,
-    // AiHelpComponent,
+    AiHelpComponent,
     // PeerTutorComponent,
     // PeerMentorsComponent,
     HomeComponent
