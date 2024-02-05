@@ -26,7 +26,7 @@ import { InterceptorService } from './service/interceptor.service';
 // import { AiHelpComponent } from './ai-help/ai-help.component';
 // import { PeerTutorComponent } from './peer-tutor/peer-tutor.component';
 // import { PeerMentorsComponent } from './peer-mentors/peer-mentors.component';
-// import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
 
 export function tokenGetter() {
   return localStorage.getItem("token");
@@ -43,7 +43,7 @@ export function tokenGetter() {
     // AiHelpComponent,
     // PeerTutorComponent,
     // PeerMentorsComponent,
-    // HomeComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
