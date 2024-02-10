@@ -11,7 +11,7 @@ export class AiHelpServiceService {
 
   public chat(message: string):Observable<any> {
       // Use chatgpt.query method with optional parameters
-      let openai = new OpenAI({apiKey:"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", dangerouslyAllowBrowser: true });
+      let openai = new OpenAI({apiKey:"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", dangerouslyAllowBrowser: true });
        let apiResponse =  openai.chat.completions.create({
         messages: [{ role: "system", content: message }],
         model: "gpt-3.5-turbo",
