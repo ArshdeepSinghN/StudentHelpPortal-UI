@@ -1,0 +1,15 @@
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item" *ngFor="let item of userQueries">
+    <h2 class="accordion-header" [id]="'heading' + item.id">
+      <button class="accordion-button" type="button" [attr.data-bs-target]="'#collapse' + item.id">
+        {{ item.messageTitle }}
+      </button>
+    </h2>
+    <div [id]="'collapse' + item.id" class="accordion-collapse" [ngClass]="{'show': item.expanded}">
+      <div class="accordion-body">
+        <strong>{{ item.messageText }}</strong>
+      </div>
+    </div>
+    <button class="btn btn-primary" (click)="resolveIssue(item)">Resolve</button>
+  </div>
+</div>

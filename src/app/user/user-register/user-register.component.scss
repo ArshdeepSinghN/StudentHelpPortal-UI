@@ -1,0 +1,33 @@
+.left_panel
+{
+  background-color: powderblue;
+}
+
+.right_panel{
+  background-color: aqua;
+}
+
+.padding_container{
+  padding: 10px 20px;
+}
+
+
+.input-wrapper label {
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.floating-input {
+  border: 1px solid #BDC5CB;
+  border-radius: 5px;
+  color: #5A6278;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.floating-input:focus{
+  outline: none;
+  border: 1px solid #00CFFF;
+}

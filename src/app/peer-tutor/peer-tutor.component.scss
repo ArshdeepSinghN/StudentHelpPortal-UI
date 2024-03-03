@@ -1,0 +1,32 @@
+.container-main {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }/* Add this CSS to your styles or CSS file */
+
+  .btn-primary {
+    background-color: #eb5d1f;
+    border: 0; /* Button color */
+  }
+.custom-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-input {
+    border-radius: 8px;
+  }
+  
+  .custom-textarea {
+    border-radius: 8px;
+    resize: none; /* Prevent textarea from being resizable */
+  }
+  
+  .custom-btn {
+    border-radius: 8px;
+  }
+  

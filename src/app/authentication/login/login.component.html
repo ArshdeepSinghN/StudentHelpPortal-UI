@@ -1,40 +1,43 @@
-<div class="card">
-  <div class="card-body">
+  <div class=" check">
+  <div class="card shadow-lg">
+    <div class="card-body">
       <h1 class="card-title">Login</h1>
       <p-toast position="top-center">
         <ng-template let-message pTemplate="message">
-            <p innerHtml="{{message.detail}}"></p>
+          <p innerHtml="{{message.detail}}"></p>
         </ng-template>
-    </p-toast>
+      </p-toast>
       <div *ngIf="showError" class="alert alert-danger" role="alert">
-          {{errorMessage}}
+        {{errorMessage}}
       </div>
-
+  
       <form [formGroup]="loginForm" autocomplete="off" novalidate (ngSubmit)="loginUser(loginForm.value)">
-          <div class="mb-3 row">
-              <label for="username" class="col-form-label col-sm-2">Username:</label>
-              <div class="col-md-5">
-                  <input type="text" id="username" formControlName="username" class="form-control" />
-              </div>
-              <div class="col-md-5">
-                  <em *ngIf="validateControl('username') && hasError('username', 'required')">Username is required</em>
-              </div>
+        <div class="mb-3 row">
+          <label for="username" class="col-form-label col-sm-2">Username</label>
+          <div class="col-md-5">
+            <input type="text" id="username" formControlName="username" class="form-control" />
           </div>
-          <div class="mb-3 row">
-              <label for="password" class="col-form-label col-sm-2">Password:</label>
-              <div class="col-md-5">
-                  <input type="password" id="password" formControlName="password" class="form-control" />
-              </div>
-              <div class="col-md-5">
-                  <em *ngIf="validateControl('password') && hasError('password', 'required')">Password is required</em>
-              </div>
+          <div class="col-md-5">
+            <em *ngIf="validateControl('username') && hasError('username', 'required')">Username is required</em>
           </div>
-          <br>
-          <div class="mb-3 row">
-              <div class="col-md-1">
-                  <button type="submit" class="btn btn-info" [disabled]="!loginForm.valid">Login</button>
-              </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="password" class="col-form-label col-sm-2">Password</label>
+          <div class="col-md-5">
+            <input type="password" id="password" formControlName="password" class="form-control" />
           </div>
+          <div class="col-md-5">
+            <em *ngIf="validateControl('password') && hasError('password', 'required')">Password is required</em>
+          </div>
+        </div>
+        <br>
+        <div class="mb-3 row">
+          <div class="col-md-1">
+            <button type="submit" style="background-color: #ffbf00; border-radius: 5px;" class="btn btn-warning text-white" [disabled]="!loginForm.valid">Login</button>
+          </div>
+        </div>
       </form>
+    </div>
   </div>
-</div>
+  </div>
+  

@@ -1,0 +1,38 @@
+<p-toast position="top-center"></p-toast>
+
+<header class="peer-tutor-header text- text-center ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Welcome to Peer Tutoring</h1>
+        <p>Your place for academic assistance</p>
+      </div>
+      
+    </div>
+  </div>
+</header>
+<div class="container container-main  pb-5">
+  <div class="">
+    <!-- peer-tutor-header.component.html -->
+
+
+    
+
+    <form (ngSubmit)="sendRequest()" #requestForm="ngForm" class="custom-form">
+      
+
+      <div class="form-group mb-3 mt-md-3 ">
+        <label for="userIssueTitle">Please write your query here</label>
+        <input type="text" class="form-control custom-input" id="userIssueTitle" name="userIssueTitle" [(ngModel)]="userIssueTitle">
+      </div>
+
+      <div class="form-group mb-3 mt-3">
+        <label for="issueDescription">Please type your issue description*</label>
+        <textarea class="form-control custom-textarea" id="issueDescription" name="userIssueDesc" rows="10" [(ngModel)]="userIssueDesc"
+          placeholder="Please provide a detailed explanation of your issue in a minimum of 50 words here"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-3">Ask For Help</button>
+    </form>
+  </div>
+</div>

@@ -17,3 +17,22 @@ em{
   padding-left: 50px;
 }
 
+
+.check{
+  background-color: #FAEDDA; /* Background color */
+  padding: 50px ;
+  margin-top: -10px;
+  width: 100%;
+  height: 690px;
+}
+
+@media (min-width: 572px) and (max-width: 780px) {
+  .col-md-5 {
+    width: 100%;
+  }
+
+  .col-sm-2 {
+    width: 100%;
+    text-align: left; 
+  }
+}
