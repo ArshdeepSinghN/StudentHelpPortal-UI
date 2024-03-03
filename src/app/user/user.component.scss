@@ -1,0 +1,26 @@
+::ng-deep {
+  body {
+    .p-datatable-wrapper{
+      .p-datatable-tbody{
+        tr.p-selectable-row{
+          &:nth-child(even){
+          background-color: #0aa37187;
+          }
+          &:nth-child(odd){
+          background-color: #c0ded5f0;
+          }
+          &:hover {
+          // background-color: transparent !important;
+          background-color: #bfdbfe63 !important;
+          opacity: 0.80;
+        }
+      }
+      }
+      .p-datatable-thead {
+        tr th{
+          background-color: #0aa371f0;
+          color: white;
+        }}
+    }
+  }
+}
