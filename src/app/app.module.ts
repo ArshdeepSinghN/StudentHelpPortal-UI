@@ -21,12 +21,13 @@ import { MessageService } from 'primeng/api';
 import {AutoCompleteModule} from 'primeng/autocomplete';
 
 
-// import { ChatComponent } from './chat/chat.component';
+import { ChatComponent } from './chat/chat.component';
 import { InterceptorService } from './service/interceptor.service';
 import { AiHelpComponent } from './ai-help/ai-help.component';
 import { PeerTutorComponent } from './peer-tutor/peer-tutor.component';
 import { PeerMentorsComponent } from './peer-mentors/peer-mentors.component';
 import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
 
 export function tokenGetter() {
   return localStorage.getItem("token");
@@ -37,9 +38,9 @@ export function tokenGetter() {
     AppComponent,
     // UserRegisterComponent,
     NavBarHeaderComponent,
-    // UserComponent,
+    UserComponent,
     // SubNavComponent,
-    // ChatComponent,
+    ChatComponent,
     AiHelpComponent,
     PeerTutorComponent,
     HomeComponent,

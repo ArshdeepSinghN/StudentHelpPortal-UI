@@ -10,6 +10,8 @@ import { PeerMentorsComponent } from './peer-mentors/peer-mentors.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterUserComponent } from './authentication/register-user/register-user.component';
 import { LoginComponent } from './authentication/login/login.component';
+import { ChatComponent } from './chat/chat.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
@@ -18,12 +20,12 @@ const routes: Routes = [
   {
     path: 'user/login', component: LoginComponent, canActivate: [AuthGuard]
   },
-  // {
-  //   path: 'user/view', component: UserComponent, canActivate: [AuthGuard]
-  // },
-  // {
-  //   path: 'chat', component: ChatComponent, // canActivate: [AuthGuard]
-  // },
+  {
+    path: 'user/view', component: UserComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'chat', component: ChatComponent, // canActivate: [AuthGuard]
+  },
   {
     path: 'authentication', loadChildren: () => import('./authentication/authentication.module').then(mod => mod.AuthenticationModule)
   }
